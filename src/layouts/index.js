@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import ParticlesWrapper from '../components/ParticlesWrapper'
-
+import resetStyles from '../resetStyles'
 // import Header from '../components/header'
 
 const Layout = ({ children, data }) => (
@@ -14,8 +14,9 @@ const Layout = ({ children, data }) => (
         { name: 'description', content: 'Sample' },
         { name: 'keywords', content: 'sample, something' },
       ]}
-    />
-    {/* <Header siteTitle={data.site.siteMetadata.title} /> */}
+    >
+      <style type="text/css">{resetStyles}</style>
+    </Helmet>
     <div
       style={{
         margin: '0 auto',
