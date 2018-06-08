@@ -45,4 +45,12 @@ q:before, q:after {
 blockquote, q {
 	quotes: "" "";
 }
+html, body, #___gatsby, #___gatsby > div {
+	height: 100%;
+	width: 100%;
+	min-height: 100%;
+}
+[data-reactroot] {
+	height: 100% !important;
+}
 `
